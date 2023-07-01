@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">  <!-- mnn met ou head tag pli annord  for responsive design and browser compatibility-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mn met sa bootstrap CDN pu li aranz enpe u table -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Daily Routine Checks</title>
+    <style>
+        h1 {
+            text-align: left;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .header{ margin:auto;
+             padding-top: 30px;
+
+        }
+        .tform{margin:auto;
+             padding-top: 30px;
+             padding-bottom: 30px;
+
+             
+
+        }
+        
+        
+           
+        
+    </style>
+</head>
+
+
+<body>
+    <div class="container"> <!-- mn envlop ou paz dan en div pu u kapab center li lo u paz an servi boostrap-->
+        <header class="header">
+            <table style="width:100%">
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="C:\images\crest.png"> &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:bold; font-size: x-large;"> SEYCHELLES METEOROLOGICAL AUTHORITY</span>&nbsp;&nbsp;&nbsp;&nbsp; <img
+                            src="C:\images\metlog1.png"></td>
+                    <td style="text-align:center; font-weight:bold;"> MET FORM 71 A <BR> Routine check list form <BR>
+                        Main Met Office <BR> Latest Issue Date: 21/07/2022</td>
+                </tr>
+            </table>
+        </header>
+        <p><span style="font-weight:bold"><u>DAILY (Instrument/Equipment) CHECK LIST - Main Met Office</u></span></p>
+        <table style="text-align:center;">
+            <tr>
+                <th style="text-align:center;">To be performed during day duty</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>
+                    <label for="date" text-align="center">Date:</label>
+                    <input type="date" id="date" name="date">
+                </th>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <th>Checked (OK)</th>
+                <th>Not Checked</th>
+                <th>Time (UTC)</th>
+                <th>Remarks</th>
+            </tr>
+            <tr>
+                <td>1.Review OPS fault log form(37) from forecast office and resolve unattended technical issues</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>2. Confirm internet/e-mails availability for all Information systems & office users of SMA
+                    (i.e. communication links of SMA’s, LAN & ISPs)</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>3. Confirm communication of HF receiver signals(Rimes) and data reception for marine buoys- Url :
+                    <BR>
+                        <a href= "http://smartweb.axys-aps.com/sites/1388/TAB03622/" target="_blank">1)  http://smartweb.axys-aps.com/sites/1388/TAB03622(AXYS- WRB)</a>
+                            <BR>
+                                <a href= "http://osfas.rimes.int/index.php/buoy/location/" target="_blank"> 2)http://osfas.rimes.int/index.php/buoy/location(Incois-WRB)</a></td>
+                <td align="center"><BR> <BR> <input type="checkbox"><BR><input type="checkbox"></td>
+                <td align="center"><BR><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>4. Confirm Data reception of DCP stations from <a href="https://service.eumetsat.int/dcswebservice/mainMenuAction.do?action=DCP_ADMIN" target="_blank">“Eumetsat Web Portal”</a>
+                    (i.e. Vaisala AWS’s, Pointe-Larue Tide gauge)</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>5. Confirm data reception of cloud parameters (CL31) on “ceilometer laptop in
+                    forecast office</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>6. Confirm status & data reception for all <a href= "https://www.weatherlink.com/login/" target="_blank">Davis AWS’s</a> (i.e. IDC stn, SMA stn )
+                    - Others include SADC-Tracemet, Davis Vantage Pro2 (back-up wind stn)</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>7. Check server room environment condition (Room temp) and
+                    UPS operations (batteries status level and or abnormal functioning)</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>8. Check Avimet-AWOS status via maintenance terminal/CDU display console</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>9. Check data reception/time on “Intellisense GUI” compare application time with
+                    PC time (adjust if necessary)</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>10. Check status of Puma stations (data capture, processing and visualization)
+                    using <a href= "http://192.168.0.40:8000/mesa-monitoring.html" target="_blank">Mesa Monitoring Dashboard</a>
+                     and <a href= "http://192.168.0.40:8300" target="_blank">Tellicast web interface</a></td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>11. Check status of <a href= "http://192.168.0.29/transmetweb/public/" target="_blank">Transmet</a> servers/modems using (viewer’s PC)</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>12. Check data availability on synergie servers (SYAMAA01, SYAMAA02)</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>13. Check that <a href= "http:192.168.0.24" target="_blank">Aerometweb</a>
+                    <a href= "http:192.168.0.35" target="_blank">/Report Factory</a> applications and services are running</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>14. Check operational status of websites managed by SMA: <BR>
+                    <a href= "http://www.meteo.gov.sc" target="_blank">1)  www.meteo.gov.sc |</a> 
+                        <a href="http://regionalclimate-change.sc" target="_blank">2) http://regionalclimate-change.sc ||</a>
+                        <BR>
+                        <a href="https://galilee.univ-reunion.fr/SolarIO/" target="_blank"> 3)  https://galilee.univ-reunion.fr (</a> 
+                         <a href="http://syn.meteo.gov.sc/" target="_blank">|| (http://syn.meteo.gov.sc/)</a></span></td>
+                </td>
+                <td><BR> 1) <input type="checkbox"> <BR> 2) <input type="checkbox"> <BR> 3) <input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+
+            </tr>
+            <tr>
+                <td>15. Check wireless LAN connectivity between R/S and MMO</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>16. Check status of PWS Studio systems and recording equipment.</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>17. Visually Inspect all instruments, satellite dishes, mast structures in enclosure and report any
+                    anomaly</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>18. Check and confirm transmission of TRANSMET e-mails distributions
+                    (via the mailbox of Duty Observer (assistant@meteo.gov.sc) and transmet server)</td>
+                <td align="center"><input type="checkbox"></td>
+                <td align="center"><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>19. Check operational status of digital barometers & data being displayed
+                    (Report any malfunctions)</td>
+                <td ><input type="checkbox"></td>
+                <td ><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <BR>
+        <hr>
+        <form class="tform"> <!-- servi class donn li an non pu u kapab refer avek li dn ou css-->
+            <div>
+                <label for="tname">Technician Name:</label>
+                <input type="text" id="tname" name="tname" class="mb-2 mt-3"> 
+            </div>
+            <div>
+                <label for="tcompleted">Time Completed:</label> 
+                <input type="text" id="tcompleted" name="tcompleted" class="mb-3"><br>
+            </div>
+            <label for="user_comments">Comments:</label>
+            <textarea id="user_comments" name="user_comments" maxlength="500" rows="5" cols="30"></textarea>
+            <div>
+                <BR> <BR>
+                <input type="submit" class="btn btn-success" value="Submit">submit</input>
+                <button type="clear">Clear Fields</button>
+            </div>
+            </form>
+          <hr>
+        <footer>
+            <p><small> Copyright 2023</small></p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
