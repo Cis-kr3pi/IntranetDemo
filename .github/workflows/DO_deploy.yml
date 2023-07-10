@@ -10,8 +10,8 @@ jobs:
   
   steps:
   
-   -name: deploy springboot app
-   uses: kr3pi/ssh-action@v0.1.2
+    -name: deploy springboot app
+     uses: kr3pi/ssh-action@v0.1.2
    
    with:
     host: ${{secrets.SSH_HOST }}
