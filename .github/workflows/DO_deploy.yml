@@ -5,20 +5,17 @@ on:
  
 jobs:
  deploy:
- 
   runs-on: ubuntu-latest
-  
   steps:
     - uses: kr3pi/ssh-action@v0.1.2
     - name: deploy springboot app
-   
-    with:
-     host: ${{secrets.SSH_HOST }}
-     key: ${{secrets.SSH_KEY }}
-     username: ${{secrets.SSH_USERNAME }}
+      with:
+       host: ${{secrets.SSH_HOST }}
+       key: ${{secrets.SSH_KEY }}
+       username: ${{secrets.SSH_USERNAME }}
  
-    Script: |
-     cd webdev
-     git clone git@github.com:Kr3pi/IntranetDemo.git
-     echo: 'Deploy successfull'
+       Script: |
+        cd webdev
+        git clone git@github.com:Kr3pi/IntranetDemo.git
+        echo: 'Deploy successfull'
  
