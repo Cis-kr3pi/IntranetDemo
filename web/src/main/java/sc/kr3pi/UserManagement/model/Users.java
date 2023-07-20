@@ -17,9 +17,8 @@ public class Users {
             strategy = GenerationType.AUTO)
     @Id
     private Long id;
-    @Column(name = "email", unique = true)
+    @Column(name = "email", nullable = false , unique = true ,length = 45)
     private String email;
-    private String username;
 
     private String password;
     @Column(name = "account_is_locked")
@@ -57,11 +56,11 @@ public class Users {
     }
 
     public String getUsername() {
-        return username;
+        return email;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.email = username;
     }
 
     public String getPassword() {

@@ -12,8 +12,6 @@
     <modules>
         <module>TaskManagement</module>
         <module>web</module>
-        <module>web</module>
-        <module>TaskManagement</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
